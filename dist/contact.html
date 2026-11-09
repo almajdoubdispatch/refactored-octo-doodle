@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Contact Almajdoub Dispatch and submit a carrier inquiry.">
+  <title>Contact &amp; Carrier Intake — Almajdoub Dispatch</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/waitlist.css">
+  <script src="assets/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="Almajdoub Dispatch home"><img class="brand-logo" src="assets/almajdoub-logo-horizontal.png" alt="Almajdoub Dispatch — Your truck. Your call."></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="founder-waitlist.html">Founder Waitlist</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </nav>
+      <details class="mobile-menu"><summary aria-label="Open site navigation">Menu</summary><div class="mobile-menu-panel"><a href="index.html">Home</a><a href="services.html">Services</a><a href="how-it-works.html">How it works</a><a href="pricing.html">Pricing</a><a href="founder-waitlist.html">Founder Waitlist</a><a href="contact.html">Contact</a></div></details>
+    </div>
+  </header>
+  <main id="main">
+    <section class="container">
+      <p class="eyebrow">Carrier Intake &amp; Direct Desk Contact</p>
+      <h1>Speak directly with the operations desk.</h1>
+      <p class="lede">Submit your carrier details below to verify lane fit, equipment availability, and weekly dispatch terms. No sales calls or automated bots — we review your operating preferences directly.</p>
+
+      <section class="waitlist-panel" aria-labelledby="inquiry-heading">
+        <h2 id="inquiry-heading">Carrier Inquiry Form</h2>
+        <p class="fine">Provide your basic operating information. Do not submit banking credentials, tax forms, insurance certificates, or sensitive driver records through this form.</p>
+        <form id="carrier-inquiry-form" novalidate>
+          <div class="waitlist-grid">
+            <label class="waitlist-field" for="inq-carrier-name">Carrier legal or trade name
+              <input id="inq-carrier-name" name="carrierName" type="text" autocomplete="organization" minlength="2" maxlength="160" required placeholder="e.g. Apex Hauling LLC">
+            </label>
+            <label class="waitlist-field" for="inq-contact-name">Contact full name
+              <input id="inq-contact-name" name="contactName" type="text" autocomplete="name" minlength="2" maxlength="100" required placeholder="e.g. John Miller">
+            </label>
+            <div class="waitlist-field">
+              <label for="inq-authority-type">MC or USDOT number</label>
+              <div class="authority-row">
+                <select id="inq-authority-type" name="authorityType" required aria-label="Authority number type"><option value="MC">MC</option><option value="USDOT">USDOT</option></select>
+                <input id="inq-authority-number" name="authorityNumber" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9 -]{1,16}" required placeholder="e.g. 123456" aria-label="MC or USDOT number">
+              </div>
+            </div>
+            <label class="waitlist-field" for="inq-truck-count">Number of active trucks
+              <input id="inq-truck-count" name="truckCount" type="number" inputmode="numeric" min="1" max="50" step="1" value="1" required>
+            </label>
+            <label class="waitlist-field" for="inq-phone">Telephone
+              <input id="inq-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" minlength="10" maxlength="24" required placeholder="e.g. (409) 941-7180">
+            </label>
+            <label class="waitlist-field" for="inq-email">Business email
+              <input id="inq-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="e.g. dispatch@carrier.com">
+            </label>
+            <label class="waitlist-field" for="inq-equipment">Equipment focus
+              <select id="inq-equipment" name="equipment" required>
+                <option value="53_dry_van">53-foot Dry Van</option>
+                <option value="53_reefer">53-foot Reefer</option>
+              </select>
+            </label>
+            <label class="waitlist-field" for="inq-lanes">Preferred lanes / regions
+              <input id="inq-lanes" name="preferredLanes" type="text" maxlength="200" placeholder="e.g. Midwest, Southeast, TX to OH">
+            </label>
+          </div>
+          <label class="waitlist-field" for="inq-notes" style="margin-top: 0.5rem;">Operating notes or specific requirements (optional)
+            <input id="inq-notes" name="notes" type="text" maxlength="300" placeholder="e.g. Prefer no touch freight, home on weekends">
+          </label>
+          <label class="privacy-acknowledgment" for="inq-tcpa">
+            <input id="inq-tcpa" name="tcpaConsent" type="checkbox" required checked>
+            <span>I authorize Almajdoub Dispatch to contact me regarding dispatch coordination. I understand that Almajdoub Dispatch coordinates loads but does not sign Rate Confirmations or accept loads on my behalf without my specific approval.</span>
+          </label>
+          <button class="button" id="inquiry-submit" type="submit">Submit Carrier Inquiry</button>
+          <p id="inquiry-message" class="waitlist-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <div class="panel blue" style="margin-top: 2rem;">
+        <h2>Direct Desk Contact Details</h2>
+        <ul class="plain-list">
+          <li><strong>Direct Telephone:</strong> <a href="tel:+14099417180">+1 (409) 941-7180</a></li>
+          <li><strong>Email:</strong> <a href="mailto:contact@almajdoubdispatch.com">contact@almajdoubdispatch.com</a></li>
+          <li><strong>Operating Hours:</strong> 08:00 AM – 05:00 PM EST, Monday through Friday</li>
+          <li><strong>Founder Program:</strong> To register for founder discount eligibility, visit the <a href="founder-waitlist.html">Founder Waitlist</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand"><img src="assets/almajdoub-logo-footer-white-transparent.png" alt="Almajdoub Dispatch — Your truck. Your call."></div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="founder-waitlist.html">Founder Waitlist</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+      <p>Almajdoub Dispatch · Your truck. Your call.</p>
+    </div>
+  </footer>
+</body>
+</html>
